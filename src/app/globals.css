@@ -1,1 +1,24 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-stroke: var(--text-stroke);
+  --color-surface: var(--text-surface);
+  --color-surface-hover: var(--text-surface-hover);
+  --color-highlight: var(--text-highlight);
+}
+
+:root {
+  --text-stroke: oklch(100% 0 0 / 0.5);
+  --text-surface: oklch(100% 0 0 / 0.1);
+  --text-surface-hover: oklch(100% 0 0 / 0.05);
+  --text-highlight: oklch(100% 0 0 / 0.2);
+}
+
+.dark {
+  --text-stroke: oklch(100% 0 0 / 0.5);
+  --text-surface: oklch(100% 0 0 / 0.05);
+  --text-surface-hover: oklch(100% 0 0 / 0.02);
+  --text-highlight: oklch(100% 0 0 / 0.1);
+}
