@@ -1,3 +1,5 @@
+import { LinktreePage } from '../components/templates/linktree';
+
 export default function Home() {
-  return <div className="text-sm">Hello World</div>;
+  return <LinktreePage />;
 }
