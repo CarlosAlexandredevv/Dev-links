@@ -22,3 +22,15 @@
   --text-surface-hover: oklch(100% 0 0 / 0.02);
   --text-highlight: oklch(100% 0 0 / 0.1);
 }
+
+@utility text-sm {
+  font-size: 14px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+}
+
+@utility text-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
