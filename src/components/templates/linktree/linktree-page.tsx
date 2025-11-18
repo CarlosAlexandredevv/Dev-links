@@ -1,5 +1,6 @@
 import { cn } from '@/src/lib/utils';
 import { Avatar } from '@/src/components/avatar';
+import { Switch } from '@/src/components/ui/switch';
 
 export function LinktreePage() {
   return (
@@ -11,6 +12,7 @@ export function LinktreePage() {
       )}
     >
       <Avatar />
+      <Switch />
     </main>
   );
 }
