@@ -10,17 +10,17 @@
 }
 
 :root {
-  --text-stroke: oklch(100% 0 0 / 0.5);
-  --text-surface: oklch(100% 0 0 / 0.1);
-  --text-surface-hover: oklch(100% 0 0 / 0.05);
-  --text-highlight: oklch(100% 0 0 / 0.2);
+  --text-stroke: oklch(0% 0 0 / 0.5);
+  --text-surface: oklch(0% 0 0 / 0.05);
+  --text-surface-hover: oklch(0% 0 0 / 0.02);
+  --text-highlight: oklch(0% 0 0 / 0.1);
 }
 
 .dark {
   --text-stroke: oklch(100% 0 0 / 0.5);
-  --text-surface: oklch(100% 0 0 / 0.05);
-  --text-surface-hover: oklch(100% 0 0 / 0.02);
-  --text-highlight: oklch(100% 0 0 / 0.1);
+  --text-surface: oklch(100% 0 0 / 0.1);
+  --text-surface-hover: oklch(100% 0 0 / 0.05);
+  --text-highlight: oklch(100% 0 0 / 0.2);
 }
 
 @utility text-sm {
