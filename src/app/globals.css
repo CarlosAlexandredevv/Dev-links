@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -51,8 +51,8 @@
   --text-surface-hover: oklch(0% 0 0 / 0.02);
   --text-highlight: oklch(0% 0 0 / 0.1);
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -89,8 +89,8 @@
   --text-surface: oklch(100% 0 0 / 0.1);
   --text-surface-hover: oklch(100% 0 0 / 0.05);
   --text-highlight: oklch(100% 0 0 / 0.2);
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: oklch(0% 0 0);
+  --foreground: oklch(100% 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);

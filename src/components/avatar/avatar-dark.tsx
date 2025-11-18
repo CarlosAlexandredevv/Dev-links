@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import { cn } from '@/src/lib/utils';
+import { cn } from '@/lib/utils';
 
 export function AvatarDark() {
   return (
     <div className="gap-2 hidden dark:flex flex-col items-center justify-center">
       <Image
-        src="/avatar"
+        src="/avatar.jpg"
         alt="Avatar"
         width={112}
         height={112}

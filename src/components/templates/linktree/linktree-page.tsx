@@ -1,6 +1,6 @@
-import { cn } from '@/src/lib/utils';
-import { Avatar } from '@/src/components/avatar';
-import { Switch } from '@/src/components/ui/switch';
+import { cn } from '@/lib/utils';
+import { Avatar } from '@/components/avatar';
+import { ToogleTheme } from '../../toogle-theme';
 
 export function LinktreePage() {
   return (
@@ -12,7 +12,7 @@ export function LinktreePage() {
       )}
     >
       <Avatar />
-      <Switch />
+      <ToogleTheme />
     </main>
   );
 }
