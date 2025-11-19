@@ -1,10 +1,11 @@
 import { cn } from '@/lib/utils';
 import { Avatar } from '@/components/avatar';
-import { ToogleTheme } from '../../toogle-theme';
 import { ButtonLinks } from '@/components/button-link';
 import { buttonLinks } from '@/components/button-link';
 import { SocialLink } from '@/components/social-link';
 import { socialLinks } from '@/components/social-link/social-links';
+import { ToggleTheme } from '@/components/toggle-theme';
+
 export function LinktreePage() {
   return (
     <main
@@ -15,7 +16,7 @@ export function LinktreePage() {
       )}
     >
       <Avatar />
-      <ToogleTheme />
+      <ToggleTheme />
       <div className="flex flex-col gap-4 max-w-[540px] w-full">
         {buttonLinks.map((link) => (
           <ButtonLinks key={link.href} href={link.href}>
@@ -26,7 +27,11 @@ export function LinktreePage() {
 
       <div className="flex gap-4 ">
         {socialLinks.map((social) => (
-          <SocialLink key={social.href} href={social.href} icon={social.icon} />
+          <SocialLink
+            key={social?.href}
+            href={social?.href}
+            icon={social?.icon}
+          />
         ))}
       </div>
     </main>

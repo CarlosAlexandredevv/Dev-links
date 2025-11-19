@@ -3,7 +3,7 @@ import { MoonStar, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { cn } from '@/lib/utils';
 
-export function ToogleTheme() {
+export function ToggleTheme() {
   const { theme, setTheme } = useTheme();
   const isLight = theme === 'light';
 
