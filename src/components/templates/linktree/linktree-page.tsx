@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { Avatar } from '@/components/avatar';
 import { ToogleTheme } from '../../toogle-theme';
-import { Button } from '@/components/button/button';
+import { Button } from '@/components/button';
 
 const links = [
   {
