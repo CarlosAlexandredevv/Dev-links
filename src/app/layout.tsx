@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,6 +30,8 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" />
+        <Script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" />
       </body>
     </html>
   );

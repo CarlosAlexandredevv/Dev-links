@@ -1,10 +1,10 @@
 import { cn } from '@/lib/utils';
 import { Avatar } from '@/components/avatar';
 import { ToogleTheme } from '../../toogle-theme';
-import { Button } from '@/components/button';
-import { buttonLinks } from '@/components/button';
-import { socialItems } from '@/components/social-link/social-items';
-
+import { ButtonLinks } from '@/components/button-link';
+import { buttonLinks } from '@/components/button-link';
+import { SocialLink } from '@/components/social-link';
+import { socialLinks } from '@/components/social-link/social-links';
 export function LinktreePage() {
   return (
     <main
@@ -18,17 +18,17 @@ export function LinktreePage() {
       <ToogleTheme />
       <div className="flex flex-col gap-4 max-w-[540px] w-full">
         {buttonLinks.map((link) => (
-          <Button key={link.href} href={link.href}>
+          <ButtonLinks key={link.href} href={link.href}>
             {link.label}
-          </Button>
+          </ButtonLinks>
         ))}
       </div>
 
-      {/* <div className="flex gap-4 py-6">
-        {socialItems.map((item) => (
-          <SocialLink key={item.href} href={item.href} icone={item.icone} />
+      <div className="flex gap-4 ">
+        {socialLinks.map((social) => (
+          <SocialLink key={social.href} href={social.href} icon={social.icon} />
         ))}
-      </div> */}
+      </div>
     </main>
   );
 }
