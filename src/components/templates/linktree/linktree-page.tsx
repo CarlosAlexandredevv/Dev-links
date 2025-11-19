@@ -1,6 +1,22 @@
 import { cn } from '@/lib/utils';
 import { Avatar } from '@/components/avatar';
 import { ToogleTheme } from '../../toogle-theme';
+import { Button } from '@/components/button/button';
+
+const links = [
+  {
+    label: 'Veja meu trabalho no LinkedIn',
+    href: 'https://www.linkedin.com/in/carlos-alexandre-375a9227b/',
+  },
+  {
+    label: 'Veja meu trabalho no Github',
+    href: 'https://github.com/CarlosAlexandredevv',
+  },
+  {
+    label: 'Entre em contato comigo',
+    href: 'mailto:carlosalexandredevv@gmail.com',
+  },
+];
 
 export function LinktreePage() {
   return (
@@ -13,6 +29,11 @@ export function LinktreePage() {
     >
       <Avatar />
       <ToogleTheme />
+      {links.map((link) => (
+        <Button key={link.href} href={link.href}>
+          {link.label}
+        </Button>
+      ))}
     </main>
   );
 }
