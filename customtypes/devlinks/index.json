@@ -61,14 +61,6 @@
                 "label": "URL",
                 "select": null
               }
-            },
-            "icon": {
-              "type": "Image",
-              "config": {
-                "label": "Ícone",
-                "constraint": {},
-                "thumbnails": []
-              }
             }
           }
         }

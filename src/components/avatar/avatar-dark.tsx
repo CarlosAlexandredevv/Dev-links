@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { AvatarDark as AvatarDarkModel } from '@/model/avatar';
 
-export function AvatarDark() {
+interface AvatarDarkProps {
+  avatar: AvatarDarkModel;
+}
+
+export function AvatarDark({ avatar }: AvatarDarkProps) {
   return (
     <div className="gap-2 hidden dark:flex flex-col items-center justify-center">
       <Image
-        src="/avatar.jpg"
+        src={avatar.url}
         alt="Avatar"
         width={112}
         height={112}

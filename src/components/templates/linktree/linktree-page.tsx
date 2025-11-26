@@ -5,12 +5,10 @@ import { buttonLinks } from '@/components/button-link';
 import { SocialLink } from '@/components/social-link';
 import { socialLinks } from '@/components/social-link/social-links';
 import { ToggleTheme } from '@/components/toggle-theme';
-import { createClient } from '@/lib/prismic.io';
+import { fetchDevlinksDocument } from '@/services/prismic';
 
 export async function LinktreePage() {
-  const client = await createClient();
-  const data = await client.getSingle('devlinks');
-  console.log(data);
+  const { data } = await fetchDevlinksDocument();
 
   return (
     <main
@@ -20,7 +18,7 @@ export async function LinktreePage() {
         'lg:bg-[url("/bg-desktop-light.jpg")] dark:lg:bg-[url("/bg-desktop.jpg")] px-4',
       )}
     >
-      <Avatar />
+      <Avatar avatar={data.avatar} avatar_light={data.avatar_light} />
       <ToggleTheme />
       <div className="flex flex-col gap-4 max-w-[540px] w-full">
         {buttonLinks.map((link) => (

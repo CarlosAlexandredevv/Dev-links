@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { AvatarLight as AvatarLightModel } from '@/model/avatar';
 
-export function AvatarLight() {
+interface AvatarLightProps {
+  avatar_light: AvatarLightModel;
+}
+
+export function AvatarLight({ avatar_light }: AvatarLightProps) {
   return (
     <div className="flex flex-col items-center justify-center dark:hidden gap-2">
       <Image
-        src="/avatar-light.png"
+        src={avatar_light.url}
         alt="Avatar"
         width={112}
         height={112}

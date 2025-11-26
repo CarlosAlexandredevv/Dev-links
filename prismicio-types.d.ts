@@ -117,16 +117,6 @@ export interface DevlinksDocumentDataSocialItem {
    * - **Documentation**: https://prismic.io/docs/fields/link
    */
   url: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
-
-  /**
-   * Ícone field in *devlinks → Social Links*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: devlinks.social[].icon
-   * - **Documentation**: https://prismic.io/docs/fields/image
-   */
-  icon: prismic.ImageField<never>;
 }
 
 /**
