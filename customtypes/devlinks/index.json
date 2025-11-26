@@ -1,0 +1,78 @@
+{
+  "format": "custom",
+  "id": "devlinks",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "avatar": {
+        "type": "Image",
+        "config": {
+          "label": "Avatar",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "avatar_light": {
+        "type": "Image",
+        "config": {
+          "label": "Avatar light",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": "Nome do link"
+              }
+            },
+            "url": {
+              "type": "Link",
+              "config": {
+                "label": "URL",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "social": {
+        "type": "Group",
+        "config": {
+          "label": "Social Links",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": "Nome da rede social"
+              }
+            },
+            "url": {
+              "type": "Link",
+              "config": {
+                "label": "URL",
+                "select": null
+              }
+            },
+            "icon": {
+              "type": "Image",
+              "config": {
+                "label": "Ícone",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

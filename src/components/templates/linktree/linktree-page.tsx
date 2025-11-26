@@ -5,8 +5,13 @@ import { buttonLinks } from '@/components/button-link';
 import { SocialLink } from '@/components/social-link';
 import { socialLinks } from '@/components/social-link/social-links';
 import { ToggleTheme } from '@/components/toggle-theme';
+import { createClient } from '@/lib/prismic.io';
 
-export function LinktreePage() {
+export async function LinktreePage() {
+  const client = await createClient();
+  const data = await client.getSingle('devlinks');
+  console.log(data);
+
   return (
     <main
       className={cn(
