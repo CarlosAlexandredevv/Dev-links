@@ -3,7 +3,6 @@ import { Avatar } from '@/components/avatar';
 import { ButtonLinks } from '@/components/button-link';
 import { buttonLinks } from '@/components/button-link';
 import { SocialLink } from '@/components/social-link';
-import { socialLinks } from '@/components/social-link/social-links';
 import { ToggleTheme } from '@/components/toggle-theme';
 import { fetchDevlinksDocument } from '@/services/prismic';
 
@@ -28,12 +27,12 @@ export async function LinktreePage() {
         ))}
       </div>
 
-      <div className="flex gap-4 ">
-        {socialLinks.map((social) => (
+      <div className="flex gap-4">
+        {data.social.map((social) => (
           <SocialLink
-            key={social?.href}
-            href={social?.href}
-            icon={social?.icon}
+            key={social.label}
+            url={social.url.url}
+            label={social.label}
           />
         ))}
       </div>
