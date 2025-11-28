@@ -12,8 +12,8 @@ export function AvatarLight({ avatar_light }: AvatarLightProps) {
       <Image
         src={avatar_light.url}
         alt="Avatar"
-        width={112}
-        height={112}
+        width={128}
+        height={128}
         className={cn(
           'rounded-full object-cover object-center w-32 h-32 border-stroke border-2',
           'dark:hidden',

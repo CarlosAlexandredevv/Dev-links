@@ -15,7 +15,7 @@ export function AvatarDark({ avatar }: AvatarDarkProps) {
         width={112}
         height={112}
         className={cn(
-          'rounded-full object-cover object-center w-32 h-32 border-stroke border-2',
+          'rounded-full object-cover object-top w-32 h-32 border-stroke border-2',
           'dark:border-stroke-dark',
           'hidden dark:block',
         )}

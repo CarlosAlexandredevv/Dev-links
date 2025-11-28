@@ -7,16 +7,16 @@ interface ButtonLinkProps {
 
 export function ButtonLink({ label, url }: ButtonLinkProps) {
   return (
-    <button
-      className={cn(
-        'py-4 border border-stroke rounded-[8px] text-md bg-surface text-black transition-all duration-300 cursor-pointer  w-full',
-        'hover:border-black',
-        'dark:hover:border-white dark:text-white',
-      )}
-    >
-      <a href={url} target="_blank" rel="noopener noreferrer">
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <button
+        className={cn(
+          'py-4 border border-stroke rounded-[8px] text-md bg-surface text-black transition-all duration-300 cursor-pointer  w-full',
+          'hover:border-black',
+          'dark:hover:border-white dark:text-white',
+        )}
+      >
         {label}
-      </a>
-    </button>
+      </button>
+    </a>
   );
 }
