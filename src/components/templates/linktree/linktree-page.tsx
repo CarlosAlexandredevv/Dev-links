@@ -1,7 +1,6 @@
 import { cn } from '@/lib/utils';
 import { Avatar } from '@/components/avatar';
-import { ButtonLinks } from '@/components/button-link';
-import { buttonLinks } from '@/components/button-link';
+import { ButtonLink } from '@/components/button-link';
 import { SocialLink } from '@/components/social-link';
 import { ToggleTheme } from '@/components/toggle-theme';
 import { fetchDevlinksDocument } from '@/services/prismic';
@@ -20,10 +19,8 @@ export async function LinktreePage() {
       <Avatar avatar={data.avatar} avatar_light={data.avatar_light} />
       <ToggleTheme />
       <div className="flex flex-col gap-4 max-w-[540px] w-full">
-        {buttonLinks.map((link) => (
-          <ButtonLinks key={link.href} href={link.href}>
-            {link.label}
-          </ButtonLinks>
+        {data.links.map((link) => (
+          <ButtonLink key={link.label} url={link.url.url} label={link.label} />
         ))}
       </div>
 

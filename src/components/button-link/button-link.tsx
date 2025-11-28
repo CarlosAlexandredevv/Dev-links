@@ -1,11 +1,11 @@
 import { cn } from '@/lib/utils';
 
-interface ButtonProps {
-  children: React.ReactNode;
-  href: string;
+interface ButtonLinkProps {
+  label: string;
+  url: string;
 }
 
-export function ButtonLinks({ children, href }: ButtonProps) {
+export function ButtonLink({ label, url }: ButtonLinkProps) {
   return (
     <button
       className={cn(
@@ -14,8 +14,8 @@ export function ButtonLinks({ children, href }: ButtonProps) {
         'dark:hover:border-white dark:text-white',
       )}
     >
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        {children}
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {label}
       </a>
     </button>
   );
